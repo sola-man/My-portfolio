@@ -98,7 +98,7 @@ const Hero = () => {
 								>
 									<FiDownload /> Download CV
 								</button>
-								<Link href="/contact">
+								<Link to="/contact">
 									<button className="px-8 py-3 border-2 border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-500 hover:text-white transition-all duration-300">
 										Contact Me
 									</button>
