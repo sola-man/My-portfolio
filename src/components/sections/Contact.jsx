@@ -256,7 +256,7 @@ const Contact = () => {
 										animate={{ opacity: 1, y: 0 }}
 										className="p-3 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-lg text-center"
 									>
-										✅ Message sent successfully! I'll get back to you soon.
+										✅ Message sent successfully!
 									</motion.div>
 								)}
 
