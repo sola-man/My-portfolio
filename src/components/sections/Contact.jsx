@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaNoteSticky } from "react-icons/fa6";
 import { FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
 import { developerData } from "../../data/developerData";
 
@@ -70,7 +69,7 @@ const Contact = () => {
 									<div>
 										<h4 className="font-semibold">Email</h4>
 										<p className="text-gray-600 dark:text-gray-400">
-											<span><FaNoteSticky/>&#10003; {gmail}</span>
+											<span>&#10003; {gmail}</span>
 											<br />
 											&#10003; {instituteEmail}
 										</p>

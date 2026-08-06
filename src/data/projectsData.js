@@ -45,7 +45,7 @@ export const projectsData = [
 		image: "/images/projects/portfolio.jpg",
 		techStack: ["React", "Framer Motion", "Tailwind CSS", "React Router"],
 		github: "https://github.com/yourusername/portfolio",
-		liveDemo: "https://portfolio.netlify.app",
+		liveDemo: "https://my-portfolio-solaman.vercel.app/",
 		features: [
 			"Smooth Animations",
 			"Dark/Light Mode",
@@ -78,9 +78,9 @@ export const projectsData = [
 		description: "Movie search app consuming a public API.",
 		detailedDescription:
 			"A responsive movie discovery app that lets users search, rate, and track watched films using a public movie database API.",
-		image: "/images/projects/i-love-movies.png",
+		image: "/images/projects/movie.png",
 		techStack: ["React", "REST API"],
-		github: "#",
+		github: "https://github.com/sola-man/I-love-movie",
 		liveDemo: "#",
 		features: [
 			"Debounced search input to reduce API calls",
@@ -95,7 +95,7 @@ export const projectsData = [
 			"An online pizza ordering flow with a persistent cart, live order status tracking, and geolocation-based delivery estimates.",
 		image: "/images/projects/pizza-house.png",
 		techStack: ["React", "Redux Toolkit"],
-		github: "#",
+		github: "https://github.com/sola-man/pizza-house",
 		liveDemo: "#",
 		features: [
 			"Managed cart state with Redux Toolkit",
@@ -110,9 +110,9 @@ export const projectsData = [
 			"Travel app for logging cities and countries you've visited on a map.",
 		detailedDescription:
 			"A travel-tracking app where users click a live map to log visited cities with notes and dates, backed by Context API for global trip state and nested routing for city detail views.",
-		image: "/images/projects/worldwise.png",
+		image: "/images/projects/world-wise.jpg",
 		techStack: ["React", "React Router", "Context API", "Leaflet"],
-		github: "#",
+		github: "https://github.com/sola-man/world-wise/",
 		liveDemo: "#",
 		features: [
 			"Built an interactive map with Leaflet that updates on click",
@@ -146,7 +146,7 @@ export const projectsData = [
 			"A bill-splitting app for tracking shared expenses with friends — add friends, open a shared-bill form, and the balance updates automatically depending on who paid.",
 		image: "/images/projects/eat-n-split.png",
 		techStack: ["React", "useState"],
-		github: "#",
+		github: "https://github.com/sola-man/eat-n-split",
 		liveDemo: "#",
 		features: [
 			"Built controlled forms for adding friends and splitting bills",
@@ -215,7 +215,7 @@ export const projectsData = [
 		image: "",
 		techStack: ["Django", "HTML", "CSS",],
 		github: "https://github.com/sola-man/online_rental_app_project_with_django",
-		liveDemo: "",
+		liveDemo: "#",
 		features: [
 			"Admin/owner upload available materials with their images",
 			"Authorization, only admin/owner is permissible to upload",

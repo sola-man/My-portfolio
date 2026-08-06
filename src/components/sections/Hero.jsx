@@ -143,7 +143,7 @@ const Hero = () => {
 										href={social.url}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="text-gray-600 dark:text-gray-400  hover:text-purple-600 dark:hover:text-blue-400 transition-colors p-2 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30"
+										className="text-gray-600 dark:text-gray-400  hover:text-purple-600 transition-colors p-2 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30"
 										whileHover={{ y: -3 }}
 										initial={{ opacity: 0, y: 20 }}
 										animate={{ opacity: 1, y: 0 }}

@@ -83,7 +83,7 @@ const Footer = () => {
 							</a>
 							
 							<a
-								href={gmail}
+								href={`mailto:${gmail}`}
 								className="text-gray-600 dark:text-gray-400  hover:text-purple-600 transition-colors"
 							>
 								<FiMail className="w-5 h-5" />
