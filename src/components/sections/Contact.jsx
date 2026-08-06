@@ -39,7 +39,7 @@ const Contact = () => {
 
 		if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
 			setError(
-				"Email service is not configured. Please check environment variables.",
+				"Email Not sent!",
 			);
 			setIsLoading(false);
 			return;
