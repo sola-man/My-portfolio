@@ -198,7 +198,7 @@ const Hero = () => {
 									delay: 0.5,
 								}}
 							>
-								⚡ 20+ Projects
+								⚡ 15+ Projects
 							</motion.div>
 						</motion.div>
 					</motion.div>
