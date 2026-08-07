@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
 import { developerData } from "../../data/developerData";
 
 const initialState = {
@@ -17,7 +17,7 @@ const Contact = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState("");
 
-	const { gMail, phone,location } = developerData;
+	const { gMail, phone,location, github, linkedIn } = developerData;
 		const { gmail, instituteEmail } = gMail;
 
 	const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -137,6 +137,29 @@ const Contact = () => {
 										<h4 className="font-semibold">Phone:</h4>
 										<p className="text-gray-600 dark:text-gray-400">
 											{phone}
+										</p>
+									</div>
+								</div>
+								<div className="flex items-start gap-4">
+									<div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+										<FiGithub className="text-blue-500 text-xl" />
+									</div>
+									<div>
+										<h4 className="font-semibold">Github:</h4>
+										<p className="text-gray-600 dark:text-gray-400">
+											{github}
+										</p>
+									</div>
+								</div>
+
+								<div className="flex items-start gap-4">
+									<div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+										<FiLinkedin className="text-blue-500 text-xl" />
+									</div>
+									<div>
+										<h4 className="font-semibold">LinkedIn:</h4>
+										<p className="text-gray-600 dark:text-gray-400">
+											{linkedIn}
 										</p>
 									</div>
 								</div>

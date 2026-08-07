@@ -97,7 +97,7 @@ const Header = () => {
 							}}
 						>
 							<FiDownload size={16} />
-							<span>CV</span>
+							<span>Resume</span>
 						</button>
 						<ThemeToggle />
 					</div>

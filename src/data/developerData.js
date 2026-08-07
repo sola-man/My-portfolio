@@ -5,7 +5,7 @@ export const developerData = {
 		instituteEmail: "mitur18865316@office.mu.edu.et",
 	},
 	github: "https://github.com/sola-man",
-	linkedIn: "https://www.linkedin.com/in/selemun-welegebrial-95604b385",
+	linkedIn: "https://www.linkedin.com/in/sol16",
 	location: "Mekelle, Tigray, Ethiopia",
 	image: "/profile_pic.jpg",
 	telegram: "https://t.me/@globalstride",
