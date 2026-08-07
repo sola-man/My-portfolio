@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { FiDownload, FiMenu, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import { handleDownloadCV } from "../../utils/helpers";
+import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -20,15 +22,6 @@ const Header = () => {
 	useEffect(() => {
 		setIsOpen(false);
 	}, [location]);
-
-	const handleDownloadCV = () => {
-		const link = document.createElement("a");
-		link.href = "/documents/resume.pdf";
-		link.download = "YourName_CV.pdf";
-		document.body.appendChild(link);
-		link.click();
-		document.body.removeChild(link);
-	};
 
 	const navItems = [
 		{ name: "Home", href: "/" },
@@ -49,13 +42,24 @@ const Header = () => {
 		>
 			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-mono">
 				<div className="flex items-center justify-between h-16">
-					<Link to="/" className="text-2xl font-bold flex gap-2">
+					<Link to="/" className="text-2xl font-bold flex gap-3">
 						<img
 							src="/dev-icon.png"
 							alt="Logo"
 							className="w-15 h-15 rounded-full"
 						/>
-						<span className="py-2.5 from-blue-500 to-purple-600">WelCome to this App.</span>
+						<TypeAnimation
+							sequence={[
+								"WelCome to this App.",
+								3000,
+								"Lets connect and cooperate",
+								3000,
+							]}
+							wrapper="span"
+							speed={30}
+							repeat={Infinity}
+							className="bg-linear-to-r from-amber-500 to-purple-600 bg-clip-text text-transparent py-3"
+						/>
 					</Link>
 
 					<div className="hidden md:flex items-center gap-8">

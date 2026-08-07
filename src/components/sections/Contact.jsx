@@ -209,6 +209,7 @@ const Contact = () => {
 										value={formData.subject}
 										onChange={handleChange}
 										required
+										placeholder="About portfolio"
 										disabled={isLoading}
 										className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors disabled:opacity-50"
 									/>

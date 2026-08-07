@@ -67,7 +67,7 @@ const Hero = () => {
 										2000,
 										"React & Next.js Expert",
 										2000,
-										"UI/UX Enthusiast",
+										"UI/UX Developer",
 										2000,
 										"Problem Solver",
 										2000,
