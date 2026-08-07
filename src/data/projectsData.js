@@ -156,7 +156,7 @@ export const projectsData = [
 	},
 	{
 		id: 10,
-		title: "Bankist",
+		title: "Bankist app",
 		description:
 			"Simulated online banking app with transfers and account management.",
 		detailedDescription:

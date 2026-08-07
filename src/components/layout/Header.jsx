@@ -47,14 +47,15 @@ const Header = () => {
 				borderBottom: scrolled ? "1px solid var(--color-border)" : "none",
 			}}
 		>
-			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-mono">
 				<div className="flex items-center justify-between h-16">
-					<Link to="/" className="text-2xl font-bold">
+					<Link to="/" className="text-2xl font-bold flex gap-2">
 						<img
 							src="/dev-icon.png"
 							alt="Logo"
 							className="w-15 h-15 rounded-full"
 						/>
+						<span className="py-2.5 from-blue-500 to-purple-600">WelCome to this App.</span>
 					</Link>
 
 					<div className="hidden md:flex items-center gap-8">
