@@ -86,14 +86,15 @@ const Projects = () => {
 									>
 										<FiGithub /> Code
 									</a>
-									<a
+
+									{project.liveDemo ? <a
 										href={project.liveDemo}
 										target="_blank"
 										rel="noopener noreferrer"
 										className="px-3 py-1 text-sm bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors inline-flex items-center gap-1"
 									>
 										<FiExternalLink /> Live Demo
-									</a>
+									</a>: null}
 									<Link
 										to={`/project/${project.id}`}
 										className="px-3 py-1 text-sm text-blue-500 hover:text-blue-600 transition-colors"

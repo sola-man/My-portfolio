@@ -147,7 +147,7 @@ export const projectsData = [
 		image: "/images/projects/eat-n-split.png",
 		techStack: ["React", "useState"],
 		github: "https://github.com/sola-man/eat-n-split",
-		liveDemo: "#",
+		liveDemo: "",
 		features: [
 			"Built controlled forms for adding friends and splitting bills",
 			"Derived running balance per friend from shared state",
@@ -164,7 +164,7 @@ export const projectsData = [
 		image: "/images/projects/bankist.png",
 		techStack: ["JavaScript (Vanilla)", "DOM Manipulation"],
 		github: "#",
-		liveDemo: "#",
+		liveDemo: "",
 		features: [
 			"Simulated login/transfer/loan flows with pure DOM manipulation",
 			"Built an auto-logout timer that resets on activity",
@@ -181,7 +181,7 @@ export const projectsData = [
 		image: "/images/projects/mapty.png",
 		techStack: ["JavaScript (Vanilla)", "Leaflet", "OOP"],
 		github: "#",
-		liveDemo: "#",
+		liveDemo: "",
 		features: [
 			"Used the Geolocation API to center the map on the user",
 			"Modeled Running/Cycling workouts as classes with shared inheritance",
@@ -215,7 +215,7 @@ export const projectsData = [
 		image: "",
 		techStack: ["Django", "HTML", "CSS",],
 		github: "https://github.com/sola-man/online_rental_app_project_with_django",
-		liveDemo: "#",
+		liveDemo: "",
 		features: [
 			"Admin/owner upload available materials with their images",
 			"Authorization, only admin/owner is permissible to upload",

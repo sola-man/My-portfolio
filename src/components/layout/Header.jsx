@@ -88,7 +88,7 @@ const Header = () => {
 						))}
 						<button
 							onClick={handleDownloadCV}
-							className="inline-flex items-center gap-2 px-4 py-1.5 rounded-2xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+							className="cursor-pointer inline-flex items-center gap-2 px-4 py-1.5 rounded-2xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
 							style={{
 								background:
 									"linear-gradient(135deg, var(--color-accent), var(--color-accent-2))",

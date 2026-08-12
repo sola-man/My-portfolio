@@ -94,12 +94,12 @@ const Hero = () => {
 							<div className="flex flex-wrap gap-4">
 								<button
 									onClick={handleDownloadCV}
-									className="px-8 py-3 bg-linear-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+									className="px-8 py-3 bg-linear-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 cursor-pointer"
 								>
 									<FiDownload /> Download Resume
 								</button>
 								<Link to="/contact">
-									<button className="px-8 py-3 border-2 border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-500 hover:text-white transition-all duration-300">
+									<button className="cursor-pointer px-8 py-3 border-2 border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-500 hover:text-white transition-all duration-300">
 										Contact Me
 									</button>
 								</Link>

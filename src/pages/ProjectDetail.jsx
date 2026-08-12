@@ -53,14 +53,14 @@ const ProjectDetail = () => {
 							>
 								<FiGithub /> View Code
 							</a>
-							<a
+							{project.liveDemo ? <a
 								href={`${project.liveDemo}`}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors inline-flex items-center gap-2"
 							>
 								<FiExternalLink /> Live Demo
-							</a>
+							</a>: null}
 						</div>
 					</div>
 				</div>

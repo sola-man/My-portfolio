@@ -40,7 +40,7 @@ const ThemeToggle = () => {
 	return (
 		<button
 			onClick={toggleTheme}
-			className="p-2 rounded-full transition-all duration-300 text-xl"
+			className="p-2 rounded-full transition-all duration-300 text-xl cursor-pointer"
 			style={{
 				backgroundColor: "var(--color-border)",
 				color: "var(--color-text-heading)",

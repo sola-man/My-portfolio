@@ -1,7 +1,14 @@
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
+import {
+	FiGithub,
+	FiLinkedin,
+	FiMail,
+	FiMapPin,
+	FiPhone,
+	FiSend,
+} from "react-icons/fi";
 import { developerData } from "../../data/developerData";
 
 const initialState = {
@@ -17,8 +24,8 @@ const Contact = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState("");
 
-	const { gMail, phone,location, github, linkedIn } = developerData;
-		const { gmail, instituteEmail } = gMail;
+	const { gMail, phone, location, github, linkedIn } = developerData;
+	const { gmail, instituteEmail } = gMail;
 
 	const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 	const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -38,9 +45,7 @@ const Contact = () => {
 		setError("");
 
 		if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-			setError(
-				"Email Not sent!",
-			);
+			setError("Email Not sent!");
 			setIsLoading(false);
 			return;
 		}
@@ -112,7 +117,9 @@ const Contact = () => {
 									<div>
 										<h4 className="font-semibold">Email</h4>
 										<p className="text-gray-600 dark:text-gray-400">
-											<span>&#10003;{gmail}</span><br/><span>&#10003;{instituteEmail}</span>
+											<span>&#10003;{gmail}</span>
+											<br />
+											<span>&#10003;{instituteEmail}</span>
 										</p>
 									</div>
 								</div>
@@ -135,9 +142,7 @@ const Contact = () => {
 									</div>
 									<div>
 										<h4 className="font-semibold">Phone:</h4>
-										<p className="text-gray-600 dark:text-gray-400">
-											{phone}
-										</p>
+										<p className="text-gray-600 dark:text-gray-400">{phone}</p>
 									</div>
 								</div>
 								<div className="flex items-start gap-4">
@@ -146,9 +151,7 @@ const Contact = () => {
 									</div>
 									<div>
 										<h4 className="font-semibold">Github:</h4>
-										<p className="text-gray-600 dark:text-gray-400">
-											{github}
-										</p>
+										<p className="text-gray-600 dark:text-gray-400">{github}</p>
 									</div>
 								</div>
 
@@ -261,7 +264,7 @@ const Contact = () => {
 								<button
 									type="submit"
 									disabled={isLoading}
-									className="w-full px-6 py-3 bg-linear-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+									className="cursor-pointer w-full px-6 py-3 bg-linear-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
 								>
 									{isLoading ? (
 										<>
